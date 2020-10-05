@@ -68,6 +68,30 @@
                     {
                         "manipulators": [
                             {
+                                "description": "Map ctrl+r to cmd+r (Refresh)",
+                                "from": {
+                                    "key_code": "r",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "r",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "manipulators": [
+                            {
                                 "description": "Map ctrl+c to cmd+c (Copy)",
                                 "from": {
                                     "key_code": "c",
