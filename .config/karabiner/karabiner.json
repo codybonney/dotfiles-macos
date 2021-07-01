@@ -18,21 +18,46 @@
                     {
                         "manipulators": [
                             {
-                                "description": "Map left ctrl + left click to left cmd + left click (IntelliJ Go To Declaration)",
+                                "description": "Map left cmd + ~ to left cmd + left shift + ~ (Tab between windows)",
                                 "from": {
-                                    "pointing_button": "button1",
+                                    "key_code": "grave_accent_and_tilde",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
+                                            "left_command"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "pointing_button": "button1",
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "manipulators": [
+                            {
+                                "description": "Map left ctrl + left click to left cmd + left click (IntelliJ Go To Declaration)",
+                                "from": {
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    },
+                                    "pointing_button": "button1"
+                                },
+                                "to": [
+                                    {
                                         "modifiers": [
                                             "left_command"
-                                        ]
+                                        ],
+                                        "pointing_button": "button1"
                                     }
                                 ],
                                 "type": "basic"
